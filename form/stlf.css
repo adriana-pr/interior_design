@@ -1,0 +1,153 @@
+*{
+   box-sizing: border-box;
+}
+.wrap{
+   max-width: 1200px;
+   margin: 0 auto;
+   border: 1px solid #C4C4C4;
+}
+.menu{
+   height:66px ;
+   display: flex;
+   border-bottom: 2px solid #C4C4C4;
+   box-sizing: border-box;
+}
+.left,.right {
+   height:66px ;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+  align-items: center;
+}
+
+.left a {
+   margin-left: -150px;
+   font-size: 20px;
+   color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.right a{
+ color: #C4C4C4;
+ font-size: 20px;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none; 
+ margin-left: 10px;
+
+}
+.left a:hover{
+   color:#a4a4a4 ; 
+}
+.right a:hover{
+   color: rgb(79, 78, 78); 
+}
+.filling1{
+   display: flex;
+   margin-top: 90px;
+}
+.filling{
+   position: absolute;
+   top: 155px;
+   z-index: -1;
+ width: 61%;
+ height:650px;
+background: rgb(233, 233, 233);
+}
+.title{
+margin-bottom: 100px;
+margin-left: 18%;
+}
+.title h1{
+   font-family: Playfair Display;
+   font-size: 72px;
+   margin: -45px 100px 30px 50px; 
+}
+.form{
+   text-align: center;
+}
+input[type="login"],input[type="email"]{
+   margin-bottom: 10px;
+   width: 60%;
+   height: 54px;
+   background: transparent;
+   border: 1px solid #C4C4C4;
+}
+button{
+   margin-bottom: 10px;
+   width: 45%;
+   height: 55px;
+   background: rgb(111, 111, 111);
+   border-radius: 3px ;
+   border: rgb(79, 78, 78);
+   color: white;
+   font-family: Open Sans;
+   font-size: 18px;
+}
+button:hover{
+    background: rgb(136, 136, 136);
+}
+textarea{
+   background: transparent;
+   border: 1px solid #C4C4C4;
+   width: 60%;
+height: 186px;
+}
+input[type="login"]:hover,input[type="email"]:hover{
+   border: 1px solid rgb(111, 111, 111);
+}
+textarea:hover{
+   border: 1px solid rgb(111, 111, 111);
+
+}
+input[type="login"]::placeholder{
+   color: #000000;
+   font-family: Playfair Display;
+   font-size: 18px;
+   padding: 15px;
+   font-weight: bold;
+
+}
+input[type="email"]::placeholder,textarea::placeholder{
+  color: #a0a0a0;
+   font-family: Playfair Display;
+   font-size: 18px;
+   padding: 15px;
+   font-weight: bold;
+
+}
+.footer{
+   clear: both;
+   height: 90px;
+   background: rgb(111, 111, 111);
+}
+@media screen and (max-width: 768px){
+   .title h1{
+      font-size: 60px;
+   }
+   input[type="login"],input[type="email"],button{
+      height: 40px;
+   }
+   .footer{
+      height: 70px;
+   }
+    .filling1{
+      height: 600px;
+   } 
+}
+@media screen and (max-width:579px){
+   .wrap{
+      width: 100%;
+   }
+   .title{
+      margin-left: 0;
+      }
+   .title h1{
+      font-size: 50px;
+   } 
+   .left a {
+      margin-left: 0;
+   }
+ 
+}
